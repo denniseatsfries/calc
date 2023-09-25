@@ -43,14 +43,14 @@ public class MainActivity extends AppCompatActivity {
 
     // Method to perform operations based on the selected operation
     private void performOperation(Operation operation) {
-        EditText editTextNumber1 = findViewById(R.id.editTextNumber1);
-        EditText editTextNumber2 = findViewById(R.id.editTextNumber2);
+        EditText editTextNum1 = findViewById(R.id.editTextNum1);
+        EditText editTextNum2 = findViewById(R.id.editTextNum2);
 
         double num1, num2;
 
         try {
-            num1 = Double.parseDouble(editTextNumber1.getText().toString());
-            num2 = Double.parseDouble(editTextNumber2.getText().toString());
+            num1 = Double.parseDouble(editTextNum1.getText().toString());
+            num2 = Double.parseDouble(editTextNum2.getText().toString());
 
         } catch (NumberFormatException e) {
             Toast.makeText(this, "Invalid input", Toast.LENGTH_SHORT).show();
